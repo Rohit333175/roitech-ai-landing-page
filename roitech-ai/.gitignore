@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Build output folder (Vite default)
+dist/
+
+# Google API keys (if you moved the file here)
+client_secret_*.json

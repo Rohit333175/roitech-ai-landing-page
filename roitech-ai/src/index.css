@@ -1,0 +1,59 @@
+/* Load Bai Jamjuree (400/500/600/700) */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+/* Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========== Base (global) ========== */
+@layer base {
+  html {
+    @apply font-sans antialiased;
+  }
+  body {
+    @apply bg-white text-slate-800;
+  }
+
+  /* Make Bai Jamjuree the default for `font-sans` */
+  :root {
+    --font-bai: "Bai Jamjuree", system-ui, ui-sans-serif, "Segoe UI",
+      Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  }
+  html, body {
+    font-family: var(--font-bai);
+  }
+
+  /* Smooth rendering on WebKit */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Text selection */
+  ::selection {
+    background: rgb(13 148 136 / 0.18); /* teal-600-ish with opacity */
+  }
+}
+
+/* ========== Components ========== */
+@layer components {
+  /* You use this class in a few places; keep it mapped to Bai Jamjuree as well */
+  .font-company {
+    font-family: var(--font-bai);
+  }
+}
+
+/* ========== Utilities ========== */
+@layer utilities {
+  /* Subtle dotted grid background used in Hero/Booking */
+  .bg-grid-slate-100 {
+    background-image: radial-gradient(circle at 1px 1px, rgb(241 245 249) 1px, transparent 1.6px);
+    background-size: 22px 22px;
+  }
+
+  /* Easy “ring” for focusable elements if you need it */
+  .focus-ring {
+    @apply outline-none ring-2 ring-teal-500/50 ring-offset-2 ring-offset-white;
+  }
+}

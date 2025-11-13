@@ -1,0 +1,13 @@
+# .gitignore
+
+# Dependencies
+node_modules/
+
+# Local database
+calendar.db
+
+# Authentication tokens
+tokens.json
+
+# Environment variables
+.env
