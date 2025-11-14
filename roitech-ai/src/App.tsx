@@ -15,6 +15,7 @@ import { Booking } from './components/Booking'
 import { Footer } from './components/Footer'
 import { AudienceSwitcher } from "./components/AudienceSwitcher"
 import { TermsModal } from "./components/TermsModal"
+import { PrivacyModal } from './components/PrivacyModal'
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Security />
         <Booking />
         <TermsModal />
+        <PrivacyModal />
       </main>
       <Footer />
     </div>

@@ -27,7 +27,7 @@ export const Footer = () => {
           </div>
 
           <nav className="flex flex-wrap items-center gap-6 text-slate-700 font-medium">
-            <a href="#" className="hover:text-slate-900 transition-colors">
+            <a href="#privacy" className="hover:text-slate-900 transition-colors"> {/* CHANGED from # */}
               Privacy
             </a>
             <a href="#terms" className="hover:text-slate-900 transition-colors">
@@ -76,7 +76,7 @@ export const Footer = () => {
               <p className="mt-3">
                 <a
                   href="mailto:jack@roitechai.com"
-                  className="inline-flex items-center gap-2 text-slate-700 underline decoration-slate-400/70 hover:text-slate-900 hover:decoration-slate-900"
+                  className="inline-flex items-center gap-2 text-slate-700 underline decoration-slate-400/7D hover:text-slate-900 hover:decoration-slate-900"
                 >
                   <CalendarDays className="w-4 h-4" />
                   jack@roitechai.com
