@@ -1,6 +1,5 @@
 /* src/App.tsx */
 
-// Import your new components
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
 import { CompanyOverview } from './components/CompanyOverview'
@@ -16,8 +15,17 @@ import { Footer } from './components/Footer'
 import { AudienceSwitcher } from "./components/AudienceSwitcher"
 import { TermsModal } from "./components/TermsModal"
 import { PrivacyModal } from './components/PrivacyModal'
+import { VeriskIntegrationPage } from './components/veriskIntegration/VeriskIntegrationPage' // NEW
 
 function App() {
+  const path = window.location.pathname
+
+  // New SPA route
+  if (path === "/verisk-integration") {
+    return <VeriskIntegrationPage />
+  }
+
+  // Existing main landing page
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
