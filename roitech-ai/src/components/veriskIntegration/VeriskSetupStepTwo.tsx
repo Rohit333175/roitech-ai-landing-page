@@ -3,9 +3,9 @@ import { motion } from "framer-motion"
 const steps = [
   "In the Susan AI web app, open your Organization Settings.",
   "Select the Integrations section.",
-  "Toggle on the Verisk / Xactimate® integration and click Add.",
+  "Toggle on the Verisk / XactAnalysis® integration and click Add.",
   "Enter a name for your integration so your team can recognize it.",
-  "Enter your XactNet® address — specifically, the part after the @ symbol (you can find your XactNet address in the top right of Xactimate).",
+  "Enter your XactNet® address — specifically, the part after the @ symbol (you can find your XactNet address in the top right of XactAnalysis).",
   "Click Save to enable the connection.",
 ]
 
@@ -72,7 +72,7 @@ export const VeriskSetupStepTwo = () => {
             </ol>
 
             <p className="mt-6 text-base sm:text-lg text-slate-800">
-              You can now send estimates and floor plans directly into Xactimate® from Susan AI.
+              You can now send estimates and floor plans directly into XactAnalysis® from Susan AI.
             </p>
 
             <button
@@ -83,7 +83,7 @@ export const VeriskSetupStepTwo = () => {
             </button>
 
             <p className="mt-4 text-xs sm:text-sm text-slate-500 italic">
-              Repeat these steps to connect additional Xactimate accounts if your organization uses more than one.
+              Repeat these steps to connect additional XactAnalysis accounts if your organization uses more than one.
             </p>
           </motion.div>
         </div>

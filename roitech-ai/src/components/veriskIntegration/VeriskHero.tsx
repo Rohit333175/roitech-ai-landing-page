@@ -1,7 +1,7 @@
 export const VeriskHero = () => {
   return (
     <section className="relative overflow-hidden pt-20 pb-40 bg-gradient-to-br from-slate-50 via-blue-50 to-teal-50">
-      {/* dot grid */}
+      {/* Background dot grid */}
       <div
         className="absolute inset-0 opacity-[0.05]
         bg-[radial-gradient(circle_at_1px_1px,#0f172a_1px,transparent_1.2px)]
@@ -14,9 +14,9 @@ export const VeriskHero = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* LEFT SIDE */}
+          {/* LEFT SIDE — TEXT */}
           <div>
-            {/* glossy badge, wider + larger */}
+            {/* Glossy badge */}
             <span className="inline-flex items-center gap-3 rounded-full p-[4px]
               bg-gradient-to-r from-blue-600/70 via-teal-500/70 to-orange-500/70">
               <span className="inline-flex items-center gap-3 rounded-full 
@@ -28,14 +28,16 @@ export const VeriskHero = () => {
               </span>
             </span>
 
+            {/* NEW TAGLINE AS MAIN H1 */}
             <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
-              From job-site details to{" "}
+              One workflow—{" "}
               <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
-                audit-ready estimates
+                from capture to estimate
               </span>{" "}
-              in minutes.
+              to XactAnalysis.
             </h1>
 
+            {/* ORIGINAL DESCRIPTION PARAGRAPH (KEPT, WITH XactAnalysis) */}
             <p className="mt-6 text-lg sm:text-xl text-slate-700 max-w-xl leading-relaxed">
               Connect{" "}
               <span className="font-semibold bg-gradient-to-r from-blue-700 via-teal-600 to-green-500
@@ -44,14 +46,14 @@ export const VeriskHero = () => {
               </span>{" "}
               directly to your{" "}
               <span className="font-black text-slate-900">
-                Xactimate®
+                XactAnalysis®
               </span>{" "}
               workflow so notes, photos, sketches, and checklists flow seamlessly into
               precise, review-ready scopes—no duplication, no manual cleanup.
             </p>
           </div>
 
-          {/* RIGHT SIDE – MOCKUP */}
+          {/* RIGHT SIDE — MOCKUP */}
           <div className="relative mt-10 lg:mt-0" aria-label="Verisk Integration Product Preview">
             {/* glow */}
             <div className="pointer-events-none absolute -inset-4 rounded-[2rem]
@@ -60,7 +62,7 @@ export const VeriskHero = () => {
             <div className="relative rounded-[2rem] bg-white/90 backdrop-blur
               border border-slate-200 shadow-[0_20px_60px_rgba(15,23,42,0.15)] p-6 h-[520px]">
 
-              {/* bigger title */}
+              {/* title */}
               <div className="text-lg sm:text-xl font-bold text-slate-900">
                 Verisk Integration Preview
               </div>
@@ -77,7 +79,7 @@ export const VeriskHero = () => {
                 </div>
                 <div className="rounded-xl border border-slate-200 bg-white p-4">
                   <div className="text-xs text-slate-500">System</div>
-                  <div className="mt-1 font-semibold text-slate-900">Xactimate®</div>
+                  <div className="mt-1 font-semibold text-slate-900">XactAnalysis®</div>
                 </div>
               </div>
 
@@ -86,12 +88,12 @@ export const VeriskHero = () => {
                 <div className="text-sm font-semibold text-slate-900">Scope Preview</div>
                 <ul className="mt-3 space-y-2 text-sm text-slate-700">
                   <li>• Extract measurements & room layouts from Verisk sketch</li>
-                  <li>• Align tasks to Xactimate® category/class codes</li>
+                  <li>• Align tasks to XactAnalysis® codes</li>
                   <li>• Generate consistent line items with justifications</li>
                 </ul>
               </div>
 
-              {/* import workflow card */}
+              {/* Import Workflow card */}
               <div className="absolute -bottom-10 -left-6 w-[88%] rotate-[-3deg]">
                 <div className="rounded-2xl border border-slate-200 bg-white/90 backdrop-blur p-4 shadow">
                   <div className="text-sm font-semibold text-slate-900">Import Workflow</div>
@@ -103,7 +105,7 @@ export const VeriskHero = () => {
                       Rooms & measurements detected
                     </div>
                     <div className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2">
-                      Checklists matched to workflow
+                      Checklist matched to workflow
                     </div>
                     <div className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2">
                       Tasks grouped for estimate
@@ -112,12 +114,12 @@ export const VeriskHero = () => {
                 </div>
               </div>
 
-              {/* export card – moved further right */}
+              {/* Export card */}
               <div className="absolute -bottom-20 -right-10 w-[72%] rotate-2">
                 <div className="rounded-2xl border border-slate-200 bg-white/85 backdrop-blur p-4 shadow">
                   <div className="flex items-center justify-between">
                     <div className="text-sm font-semibold text-slate-900">Export</div>
-                    <span className="text-xs text-slate-500">Xactimate® / PDF</span>
+                    <span className="text-xs text-slate-500">XactAnalysis® / PDF</span>
                   </div>
                   <div className="mt-2 h-16 rounded-lg border border-dashed border-slate-300 grid place-items-center text-xs text-slate-500">
                     Drag to carrier portal

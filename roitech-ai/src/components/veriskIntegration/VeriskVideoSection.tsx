@@ -37,7 +37,7 @@ export const VeriskVideoSection = () => {
           className="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed"
         >
           A quick walkthrough of how Susan AI automatically syncs field data, sketches, 
-          and structured scope details directly into Xactimate®.
+          and structured scope details directly into XactAnalysis®.
         </motion.p>
 
         {/* VIDEO CONTAINER */}

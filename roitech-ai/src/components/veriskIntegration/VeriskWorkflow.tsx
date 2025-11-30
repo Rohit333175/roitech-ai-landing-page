@@ -9,22 +9,22 @@ const steps = [
     desc: "Collect notes, photos, sketches, and checklists in Susan AI while you’re on site.",
   },
   {
-    icon: UploadCloud,
-    label: "Sync",
-    title: "Sync with Verisk",
-    desc: "Send sketch and job data into the Verisk ecosystem and keep Xactimate® as your source of record.",
-  },
-  {
     icon: Wand2,
     label: "Generate",
-    title: "AI builds the scope",
-    desc: "Susan AI structures room data, deduplicates items, and recommends line items aligned to Xactimate® codes.",
+    title: "AI builds the estimate",
+    desc: "Susan AI structures room data, deduplicates items, and recommends line items aligned to XactAnalysis® codes.",
+  },
+  {
+    icon: UploadCloud,
+    label: "Sync",
+    title: "Sync with XactAnalysis",
+    desc: "Send estimate data into the Verisk ecosystem and keep XactAnalysis® as your source of record.",
   },
   {
     icon: Share2,
     label: "Export",
-    title: "Export & collaborate",
-    desc: "Review, adjust, then export to Xactimate® / PDF and share with carriers or TPAs in your existing workflows.",
+    title: "Export",
+    desc: "Review, adjust, then export to XactAnalysis® / PDF and share with carriers or TPAs in your existing workflows.",
   },
 ]
 
@@ -35,10 +35,14 @@ export const VeriskWorkflow = () => {
       className="relative isolate overflow-hidden py-24 bg-white"
       aria-labelledby="verisk-workflow-heading"
     >
-      {/* soft background glows */}
-      <div className="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-blue-100/40 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-teal-100/40 blur-3xl" />
-      <div className="absolute inset-0 -z-10 opacity-[0.04] bg-[radial-gradient(circle_at_1px_1px,#0f172a_1px,transparent_1.2px)] [background-size:18px_18px]" />
+      {/* STRONGER CORNER GLOWS */}
+      <div className="pointer-events-none absolute -top-40 -left-40 h-80 w-80 rounded-full bg-blue-300/55 blur-3xl -z-10" />
+      <div className="pointer-events-none absolute -top-10 right-10 h-56 w-56 rounded-full bg-sky-200/45 blur-3xl -z-10" />
+      <div className="pointer-events-none absolute -bottom-48 -right-40 h-96 w-96 rounded-full bg-teal-300/55 blur-3xl -z-10" />
+      <div className="pointer-events-none absolute bottom-10 -left-10 h-56 w-56 rounded-full bg-emerald-200/40 blur-3xl -z-10" />
+
+      {/* dot grid */}
+      <div className="absolute inset-0 -z-20 opacity-[0.04] bg-[radial-gradient(circle_at_1px_1px,#0f172a_1px,transparent_1.2px)] [background-size:18px_18px]" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -67,7 +71,7 @@ export const VeriskWorkflow = () => {
           </div>
 
           <p className="mt-5 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
-            A simple four-step flow that keeps Susan AI, Verisk, and Xactimate® in sync —
+            A simple four-step flow that keeps Susan AI, Verisk, and XactAnalysis® in sync —
             without changing how your adjusters or estimators like to work today.
           </p>
         </motion.div>
@@ -122,7 +126,7 @@ export const VeriskWorkflow = () => {
                   {step.desc}
                 </p>
 
-                {/* bottom accent line pinned to bottom */}
+                {/* bottom accent line, pinned to bottom */}
                 <span className="mt-auto pt-5 block h-[1.5px] rounded-full bg-gradient-to-r from-blue-500/50 via-sky-500/50 to-teal-500/50" />
               </div>
             </motion.li>
@@ -140,7 +144,7 @@ export const VeriskWorkflow = () => {
           <p className="text-sm sm:text-base md:text-[1.05rem] text-slate-600">
             Keep <span className="font-semibold text-slate-900">Susan AI</span> for
             intelligence, <span className="font-semibold text-slate-900">Verisk</span> for
-            ecosystem, and <span className="font-semibold text-slate-900">Xactimate®</span> as
+            ecosystem, and <span className="font-semibold text-slate-900">XactAnalysis®</span> as
             the estimating system your teams already trust.
           </p>
         </motion.div>
