@@ -19,14 +19,12 @@ export const Navbar = () => {
     <nav className="bg-white/90 backdrop-blur-sm border-b border-slate-100 sticky top-0 z-50" role="navigation" aria-label="Main">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <a href="#" className="flex items-center gap-1.5" aria-label="Roitech AI Home">
+          <a href="/" className="flex items-center gap-1.5" aria-label="Roitech AI Home">
             <img src={RoitechLogo} alt="Roitech AI Logo" className="h-11 w-auto object-contain select-none" draggable={false} />
-            <span className="font-company text-[1.2rem] leading-none font-semibold text-slate-900"></span>
           </a>
 
           {/* Desktop */}
           <div className="hidden md:flex items-center space-x-8">
-            {/* Our Product → SusanAISpotlight section */}
             <a href="#our-product" onClick={smoothNav('#our-product')} className="text-slate-600 hover:text-blue-600 transition-colors">
               Our Product
             </a>
@@ -36,6 +34,15 @@ export const Navbar = () => {
             <a href="#about" onClick={smoothNav('#about')} className="text-slate-600 hover:text-blue-600 transition-colors">
               About
             </a>
+
+            {/* ⭐ NEW LINK — VERISK INTEGRATION */}
+            <a
+              href="/verisk-integration"
+              className="text-slate-600 hover:text-blue-600 transition-colors"
+            >
+              Verisk Integration
+            </a>
+
             <a
               href="https://susanintelligence.com/"
               className="inline-flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition-all duration-300 font-medium"
@@ -48,7 +55,12 @@ export const Navbar = () => {
           </div>
 
           {/* Mobile trigger */}
-          <button className="md:hidden p-2 rounded-lg border border-slate-200" aria-label="Toggle menu" aria-expanded={open} onClick={() => setOpen(v => !v)}>
+          <button
+            className="md:hidden p-2 rounded-lg border border-slate-200"
+            aria-label="Toggle menu"
+            aria-expanded={open}
+            onClick={() => setOpen(v => !v)}
+          >
             {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
@@ -56,9 +68,25 @@ export const Navbar = () => {
         {/* Mobile menu */}
         {open && (
           <div className="md:hidden py-3 border-t border-slate-100 space-y-2">
-            <a href="#our-product" onClick={smoothNav('#our-product')} className="block px-2 py-2 text-slate-700">Our Product</a>
-            <a href="#results" onClick={smoothNav('#results')} className="block px-2 py-2 text-slate-700">Results</a>
-            <a href="#about" onClick={smoothNav('#about')} className="block px-2 py-2 text-slate-700">About</a>
+            <a href="#our-product" onClick={smoothNav('#our-product')} className="block px-2 py-2 text-slate-700">
+              Our Product
+            </a>
+            <a href="#results" onClick={smoothNav('#results')} className="block px-2 py-2 text-slate-700">
+              Results
+            </a>
+            <a href="#about" onClick={smoothNav('#about')} className="block px-2 py-2 text-slate-700">
+              About
+            </a>
+
+            {/* ⭐ NEW MOBILE LINK */}
+            <a
+              href="/verisk-integration"
+              onClick={() => setOpen(false)}
+              className="block px-2 py-2 text-slate-700"
+            >
+              Verisk Integration
+            </a>
+
             <a
               href="https://susanintelligence.com/"
               onClick={() => setOpen(false)}
